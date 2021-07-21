@@ -1,0 +1,304 @@
+
+    /*HOME*/
+
+		    * {
+        margin: 0px;
+        padding: 0px; }
+    body {
+        font-size: 120%;
+        background: #F8F8FF;
+    }
+	    .header {
+        width: 40%;
+        margin: 50px auto 0px;
+        color: white;
+        background: #000000;
+        text-align: center;
+        border: 1px solid #B0C4DE;
+        border-bottom: none;
+        border-radius: 10px 10px 0px 0px;
+        padding: 20px;
+    }
+        .content {
+        width: 40%;
+        margin: 0px auto;
+        padding: 20px;
+        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-top: 3px solid rgb(0, 0, 0);
+        border-bottom: 3px solid rgb(0, 0, 0);
+        border-left: none;
+        border-right: none
+
+    }
+        .content:hover {
+            -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.6); 
+            box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.6);
+        }
+        .success {
+        color: #3c763d;
+        background: #dff0d8;
+        border: 1px solid #3c763d;
+        margin-bottom: 20px;
+    }
+        .profile_info img {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        margin: 5px;
+        padding-left:5vh;
+        padding-top:2vh;
+    }
+        .profile_info div {
+        display: inline-block;
+        margin: 8%;
+    }
+
+    a{
+        text-decoration: none;
+        color: #353535;
+        padding: 1vh;
+        border-top: 20vh;
+    }
+
+    a:hover{
+        text-decoration: none;
+        background-color:  #000000;
+        color: white;
+    }
+    li{
+        margin-top: 5vh;
+        margin-left: 25vh;
+        list-style: none;
+    }
+
+
+/*PRODUCTS*/
+    .main .create-main {
+        grid-row: 1/2;
+        display: grid;
+        grid-auto-rows: auto;
+        row-gap: 5px;
+        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-top: 3px solid rgb(0, 0, 0);
+        border-bottom: 3px solid rgb(0, 0, 0);
+        border-left: none;
+        border-right: none;
+        margin-top: 20px;
+        padding: 25px;
+        width: 250px;
+        display: center;
+        margin-bottom: 1vh;
+    }
+    .main .create-main:hover {
+        -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.6); 
+        box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.6);
+    }
+
+    .main .create-main h3 {
+        text-align: center;
+    }
+    .main .create-main input {
+        text-align: left;
+
+    }
+    .main .create-main input[type=submit] {
+        text-align: center;
+        border:none;
+        background-color:black;
+        color:white;
+    }
+
+    .main .create-main input[type=submit]:hover {
+        background-color:white;
+        color:rgb(0, 0, 0);
+        cursor: pointer;
+    }
+
+    /* Table */
+    .main .read-main {
+        grid-row: 2/3;
+        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-top: 3px solid rgb(0, 0, 0);
+        border-bottom: 3px solid rgb(0, 0, 0);
+        border-left: none;
+        border-right: none;
+        padding: 5vh;
+        width: 75%;
+    }
+
+    .main .read-main:hover {
+        -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.6); 
+        box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.6);
+    }
+
+    .main .read-main tr th {
+        width: 200px;
+        padding: 3vh;
+        background-color:gray;
+    }
+
+    .main .read-main tr:nth-child(odd) {
+        background-color:#D3D3D3;
+    }
+
+    .main .read-main tr td {
+        text-align: center;
+    }
+
+    .main .read-main tr td:nth-child {
+        display: grid;
+        grid-auto-flow: column;
+    }
+    .main .read-main tr td input[name="edit"]{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border:none;
+        padding:1vh;
+        margin-top: 10vh;
+    }
+    .main .read-main tr td input[name="edit"]:hover {
+        text-align: center white;
+        background-color:#32CD32;
+    }
+    .main .read-main tr td input[name="delete"]{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border:none;
+        padding:1vh;   
+        float: center;
+        justify-content: center;
+    }
+    .main .read-main tr td input[name="delete"]:hover {
+        text-align: center white;
+        background-color:red;
+        color:white;
+    }
+    #products .main .read-main tr td input[name="delete"]{
+        background-color: rgb(0, 0, 0);
+        color: white;
+        border:none;
+        padding:1vh;   
+        float: center;
+        justify-content: center;
+        margin-top: 10vh;
+    }
+    #products .main .read-main tr td input[name="delete"]:hover {
+        text-align: center white;
+        background-color:red;
+        color:white;
+    }
+
+/* UPDATE */
+    .main {
+        height: 100vh;
+        /* Grid */
+        display: grid;
+        grid-template-rows: auto 1fr;
+        justify-items: center;
+        row-gap: 20px;
+    }
+
+    .main .update-main {
+        grid-row: 1/2;
+        display: grid;
+        grid-auto-rows: auto;
+        row-gap: 5px;
+        box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-top: 3px solid rgb(0, 0, 0);
+        border-bottom: 3px solid rgb(0, 0, 0);
+        border-left: none;
+        border-right: none;
+        margin: 0px auto;
+        margin-top: 10vh;
+        padding: 5vh;
+    }
+    .main .update-main:hover {
+        -webkit-box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.6); 
+        box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.6);
+    }
+
+    .main .update-main h3 {
+        text-align: center;
+    }
+    .main input[type=submit] {
+        text-align: center;
+    }
+    .main input[type=submit]:hover {
+        color: white;
+        background-color: black;
+        cursor: pointer;
+    }
+
+
+/**USERS**/
+    .main {
+        height: 100vh;
+
+        /* Grid */
+        display: grid;
+        grid-template-rows: auto 1fr;
+        justify-items: center;
+        row-gap: 20px;
+    }
+
+    .main .read-main {
+        grid-row: 2/3;
+    }
+
+    .main .read-main tr th {
+        width: 200px;
+    }
+
+    .main .read-main tr td {
+        text-align: center;
+    }
+
+    .main .read-main tr td:nth-child(7) {
+        display: grid;
+        grid-auto-flow: column;
+    }
+
+/** singleorder **/
+#singleorder{
+    width:50%;
+    font-size: small;
+    margin-left:25%;
+    margin-right:25vh;
+    margin-bottom:10vh;
+    padding-top: 5vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-bottom: 10vh;
+
+
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-top: 3px solid rgb(0, 0, 0);
+        border-bottom: 3px solid rgb(0, 0, 0);
+        border-left: none;
+        border-right: none;
+}
+#singleorder h3{
+    margin-left: -2vh;
+}
+#singleorder button{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    float:right;
+    border:none;
+    padding: 1vh;
+}
+#singleorder .submit-order{
+    float:right;
+}
+#singleorder select{
+    margin-right: 1vh;
+}
+
+#singleorder button:hover{
+    box-decoration-break : none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+#singleorder input{
+    border: none;
+}

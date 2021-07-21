@@ -1,0 +1,1 @@
+$query = "SELECT CONCAT(fname, ' ', lname) AS customer_name, CONCAT(house_number, ' ',street, ' ', brgy, ' ', city, ', ', province) as default_address, image, productname, price, user_id, product_id, quantity FROM users inner join cart on users.id = user_id inner join products on products.id = product_id WHERE user_id = '".$_SESSION['user_id']."'";
